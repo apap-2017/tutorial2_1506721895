@@ -29,7 +29,7 @@ public class PageController {
 		}
 		return "greeting";
 	}
-	@RequestMapping("/latihan2")
+	@RequestMapping("/perkalian")
 	public String perkalian(@RequestParam(value = "a",required = false) String a ,@RequestParam(value = "b" , required = false) String b , Model model )
 	{
 		
@@ -50,7 +50,7 @@ public class PageController {
 			model.addAttribute("a",a);
 			model.addAttribute("b",b);
 		}
-		return "latihan2";
+		return "perkalian";
 	
 	}
 }
